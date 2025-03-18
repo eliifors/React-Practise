@@ -10,6 +10,7 @@ const Form = ({ userInput, inputChange, addItem }) => {
   return (
     <form className="input" onSubmit={handleSubmit}>
       <input
+        placeholder="Task"
         type="text"
         value={userInput}
         onChange={inputChange}

@@ -1,7 +1,11 @@
 .App {
+  box-sizing: border-box;
   width: 600px;
-  margin: 0 auto;
+  margin: 50px auto;
+  padding: 50px;
   text-align: left;
+  border: 10px solid #ff000025;
+  border-radius: 20px;
 }
 
 ul {

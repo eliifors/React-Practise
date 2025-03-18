@@ -1,19 +1,11 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
+import "./TaskListItem.css";
 
 function TaskListItem({ content, id, handleDelete }) {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-        marginTop: "20px",
-        marginLeft: "10px",
-      }}
-    >
+    <div className="item">
       {typeof content === "string" ? content : "Hatalı içerik!"}
       <Button
         variant="outlined"
