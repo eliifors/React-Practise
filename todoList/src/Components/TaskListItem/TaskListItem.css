@@ -3,5 +3,24 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  border: 1px solid #ffe100a8;
+  border-radius: 5px;
+  color: white;
+  flex-wrap: wrap;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.highlight {
+  background-color: rgba(255, 255, 0, 0.655);
+  font-weight: bold;
+}
+
+.content-text {
+  font-size: 18px;
+  padding-left: 5px;
+  max-width: 85%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }

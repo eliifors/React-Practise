@@ -1,6 +1,8 @@
 import React from "react";
 import "./Form.css";
 import Button from "@mui/material/Button";
+import AddBoxRoundedIcon from "@mui/icons-material/AddBoxRounded";
+import { IconButton } from "@mui/material";
 
 const Form = ({ userInput, inputChange, addItem }) => {
   const handleSubmit = (event) => {
@@ -16,9 +18,16 @@ const Form = ({ userInput, inputChange, addItem }) => {
         onChange={inputChange}
         className="form-control"
       />
-      <Button variant="contained" color="error" onClick={addItem}>
-        Ekle
-      </Button>
+
+      <IconButton
+        aria-label="AddBoxRounded"
+        color="success"
+        onClick={addItem}
+        className="icon-button"
+        size="large"
+      >
+        <AddBoxRoundedIcon fontSize="inherit" />
+      </IconButton>
     </form>
   );
 };

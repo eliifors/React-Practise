@@ -29,7 +29,7 @@ const App = () => {
         addItem={addItem}
       />
       {todos.length > 0 && (
-        <div className="list">
+        <div>
           <TaskList todos={todos} setTodos={setTodos} />
         </div>
       )}
