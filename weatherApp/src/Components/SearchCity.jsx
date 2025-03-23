@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./SearchCity.css";
 
-function SearchCity({ searchCity, setSearchCity }) {
+function SearchCity({ setSearchCity }) {
   const [city, setCity] = useState("");
 
   const handleChange = async () => {
     if (!city.trim()) {
       alert("Lütfen bir şehir adı giriniz!");
+      return;
     }
 
     const apiKey = "f7ea5f2b6b92efa498e1ea527c7ffb94";
@@ -18,8 +18,22 @@ function SearchCity({ searchCity, setSearchCity }) {
       const response = await axios.get(url);
       setSearchCity(response.data);
     } catch (error) {
+      if (error.response) {
+        if (error.response.status === 404) {
+          alert("Şehir bulunamadı! Lütfen geçerli bir şehir adı giriniz.");
+        } else {
+          alert(
+            `API Hatası: ${error.response.status} - ${error.response.data.message}`
+          );
+        }
+      } else if (error.request) {
+        alert(
+          "Sunucuya ulaşılamıyor. Lütfen internet bağlantınızı kontrol edin."
+        );
+      } else {
+        alert("Bilinmeyen bir hata oluştu.");
+      }
       console.error("API Hatası:", error);
-      alert("Şehir bulunamadı veya API hatası oluştu!");
     }
   };
 
