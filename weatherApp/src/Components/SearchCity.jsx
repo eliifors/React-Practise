@@ -39,7 +39,6 @@ function SearchCity({ setSearchCity }) {
 
   return (
     <div>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>Weather App</h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();

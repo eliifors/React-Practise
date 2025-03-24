@@ -1,8 +1,9 @@
 .App {
   text-align: center;
-  background-image: url("C:\Users\User\Desktop\React-Practise\weatherApp\src\assets\background.jpg"); /* Doğru kullanım */
-  background-size: cover; /* Resmi ekrana sığdır */
-  background-position: top;
-  background-repeat: no-repeat; /* Tekrar etme */
-  min-height: 100vh; /* Tüm ekranı kaplasın */
+  background-image: url("C:\Users\User\Desktop\React-Practise\weatherApp\src\assets\background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 666px;
+  min-width: 1500px;
 }
