@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.bmi-calculator {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.bmi-calculator h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+.form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.form input:focus {
+  border-color: #80ec6b;
+  outline: none;
+}
+
+.btn-calculate {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #80ec6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-calculate:hover {
+  background-color: #69c757;
+}
